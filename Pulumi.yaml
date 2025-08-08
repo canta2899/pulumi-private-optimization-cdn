@@ -1,0 +1,10 @@
+name: private-optimization-cdn
+description: A CDN protected with a key group that serves optimized images
+runtime:
+  name: nodejs
+  options:
+    packagemanager: pnpm
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: aws-typescript

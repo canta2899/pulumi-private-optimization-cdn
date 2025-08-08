@@ -1,0 +1,19 @@
+{
+    "name": "private-optimization-cdn",
+    "main": "index.ts",
+    "scripts": {
+        "signer": "tsx sign-url.ts"
+    },
+    "devDependencies": {
+        "@types/node": "^18",
+        "tsx": "^4.20.3",
+        "typescript": "^5.0.0"
+    },
+    "dependencies": {
+        "@aws-sdk/cloudfront-signer": "^3.862.0",
+        "@pulumi/aws": "^7.0.0",
+        "@pulumi/awsx": "^3.0.0",
+        "@pulumi/pulumi": "^3.113.0",
+        "inquirer": "^12.9.0"
+    }
+}
