@@ -1,4 +1,4 @@
-# AWS TypeScript Pulumi Template
+# Pulumi AWS - Private CDN with Image Optimization
 
 This project is a **Pulumi** solution that provisions a **secure AWS CDN** with **on-the-fly image optimization**.  
 
@@ -84,7 +84,7 @@ function sign(objectKey: string) {
   });
 }
 
-sign("image1.jpg?width=800&quality=80"); // Optimize with w=800, q=80
+sign("image1.jpg?width=800&q=80"); // Optimize with w=800, q=80
 sign("image1.jpg"); // Optimized with default parameters
 sign("original/image2.jpg"); // Original image
 ```
