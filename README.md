@@ -89,6 +89,8 @@ sign("image1.jpg"); // Optimized with default parameters
 sign("original/image2.jpg"); // Original image
 ```
 
+**Note**: You can encode the private key in base64 by running `base64 < .keys/public_key.pem` and then set the private key as an environment variable. This is useful when you want to use the private key in serverless functions or environments where you cannot access the file system directly. Remember to decode it before using it to sign URLs.
+
 ## Setup & Deployment
 
 ### 1. Generate Key Pair
